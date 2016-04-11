@@ -1,0 +1,185 @@
+/* !! This is a cursed css file !! */
+
+/* sway */
+:root {
+  --translateX-min: translateX(-10px);
+  --translateX-max: translateX(0px);
+  --translateY-min: translateY(-10px);
+  --translateY-max: translateY(0px);
+  --vertical: vertical 1s ease-in-out infinite alternate;
+  --horizontal: horizontal 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes horizontal {
+    0% { -webkit-transform: var(--translateX-min); }
+  100% { -webkit-transform: var(--translateX-max); }
+}
+@-moz-keyframes horizontal {
+    0% { -moz-transform: var(--translateX-min); }
+  100% { -moz-transform: var(--translateX-max); }
+}
+@-ms-keyframes horizontal {
+    0% { -ms-transform: var(--translateX-min); }
+  100% { -ms-transform: var(--translateX-max); }
+}
+@-o-keyframes horizontal {
+    0% { -o-transform: var(--translateX-min); }
+  100% { -o-transform: var(--translateX-max); }
+}
+@keyframes horizontal {
+    0% { transform: var(--translateX-min); }
+  100% { transform: var(--translateX-max); }
+}
+
+@-webkit-keyframes vertical {
+    0% { -webkit-transform: var(--translateY-min); }
+  100% { -webkit-transform: var(--translateY-max); }
+}
+@-moz-keyframes vertical {
+    0% { -moz-transform: var(--translateY-min); }
+  100% { -moz-transform: var(--translateY-max); }
+}
+@-ms-keyframes vertical {
+    0% { -ms-transform: var(--translateY-min); }
+  100% { -ms-transform: var(--translateY-max); }
+}
+@-o-keyframes vertical {
+    0% { -o-transform: var(--translateY-min); }
+  100% { -o-transform: var(--translateY-max); }
+}
+@keyframes vertical {
+    0% { transform: var(--translateY-min); }
+  100% { transform: var(--translateY-max); }
+}
+
+
+h1 {
+  -webkit-animation:  var(--horizontal);
+  -moz-animation:     var(--horizontal);
+  -ms-animation:      var(--horizontal);
+  -o-animation:       var(--horizontal);
+  animation:          var(--horizontal);
+  animation-duration: 1.4s;
+}
+
+h2 {
+  -webkit-animation:  var(--horizontal);
+  -moz-animation:     var(--horizontal);
+  -ms-animation:      var(--horizontal);
+  -o-animation:       var(--horizontal);
+  animation:          var(--horizontal);
+  animation-duration: 1.3s;
+}
+
+
+
+li:nth-child(4n+1) {
+  -webkit-animation:  var(--horizontal);
+  -moz-animation:     var(--horizontal);
+  -ms-animation:      var(--horizontal);
+  -o-animation:       var(--horizontal);
+  animation:          var(--horizontal);
+  animation-duration: 1.1s;
+}
+
+li:nth-child(4n+2) {
+  -webkit-animation:  var(--vertical);
+  -moz-animation:     var(--vertical);
+  -ms-animation:      var(--vertical);
+  -o-animation:       var(--vertical);
+  animation:          var(--vertical);
+  animation-duration: 1.5s;
+}
+
+li:nth-child(4n+3) {
+  -webkit-animation:  var(--vertical);
+  -moz-animation:     var(--vertical);
+  -ms-animation:      var(--vertical);
+  -o-animation:       var(--vertical);
+  animation:          var(--vertical);
+  animation-duration: 0.9s;
+}
+
+li:nth-child(4n+4) {
+  -webkit-animation:  var(--horizontal);
+  -moz-animation:     var(--horizontal);
+  -ms-animation:      var(--horizontal);
+  -o-animation:       var(--horizontal);
+  animation:          var(--horizontal);
+  animation-duration: 1.2s;
+}
+
+
+
+
+div:nth-child(4n+1) {
+  -webkit-animation:  var(--horizontal);
+  -moz-animation:     var(--horizontal);
+  -ms-animation:      var(--horizontal);
+  -o-animation:       var(--horizontal);
+  animation:          var(--horizontal);
+  animation-duration: 0.8s;
+}
+
+div:nth-child(4n+2) {
+  -webkit-animation:  var(--vertical);
+  -moz-animation:     var(--vertical);
+  -ms-animation:      var(--vertical);
+  -o-animation:       var(--vertical);
+  animation:          var(--vertical);
+  animation-duration: 1.3s;
+}
+
+div:nth-child(4n+3) {
+  -webkit-animation:  var(--vertical);
+  -moz-animation:     var(--vertical);
+  -ms-animation:      var(--vertical);
+  -o-animation:       var(--vertical);
+  animation:          var(--vertical);
+  animation-duration: 1.6s;
+}
+
+div:nth-child(4n+4) {
+  -webkit-animation:  var(--horizontal);
+  -moz-animation:     var(--horizontal);
+  -ms-animation:      var(--horizontal);
+  -o-animation:       var(--horizontal);
+  animation:          var(--horizontal);
+  animation-duration: 1.1s;
+}
+
+
+
+
+/* rolling icon */
+.icon {
+    width: 50px;
+    height: 50px;
+    background: #1aa;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    -ms-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+  0% {-moz-transform: rotate(0deg);}
+  100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+  0% {-ms-transform: rotate(0deg);}
+  100% {-ms-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+  0% {-o-transform: rotate(0deg);}
+  100% {-o-transform: rotate(360deg);}
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
